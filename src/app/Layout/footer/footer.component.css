@@ -1,0 +1,29 @@
+footer {
+    background-color: #2C3E50;
+    padding: 1rem;
+    text-align: center;
+    color: #ccc;
+  }
+  
+  footer ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  footer ul li {
+    display: inline;
+  }
+  
+  footer ul li a {
+    color: #00c6ff;
+    text-decoration: none;
+  }
+  
+  footer ul li a:hover {
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,32 @@
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+    height: 50vh;
+    width: 100%;
+    background-image: url('../../../assets/codigo.jpg'); /* Cambia esto según el fondo que prefieras */
+    color: white;
+    font-family: 'Poppins', sans-serif; /* Fuente moderna y elegante */
+  }
+  
+  .home-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .home-content h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #ffffff; /* Color distintivo para el subtítulo */
+  }
+  
+  .home-image img {
+    max-width: 170px;
+    border-radius: 50%;
+    
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
