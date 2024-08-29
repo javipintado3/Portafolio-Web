@@ -25,3 +25,40 @@ body {
     margin-top: 4rem;
   }
   
+  /* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+  .home-container {
+      height: auto;
+      padding: 2rem 1rem;
+      margin-top: 5rem; /* Aumentar el margen superior para evitar que el header cubra el contenido */
+  }
+
+  .home-content h1 {
+      font-size: 2rem; /* Reducimos el tamaño del texto */
+  }
+
+  .home-content h2 {
+      font-size: 1.5rem;
+  }
+
+  .home-image img {
+      max-width: 120px; /* Reducimos el tamaño de la imagen */
+  }
+
+  /* Ajustes generales de los contenedores */
+  .container, .experiencia, .estudios, .sobre-mi {
+      width: 90%; /* Aumentar el ancho para móviles */
+      margin: 2rem auto;
+      padding: 1rem; /* Reducimos el padding para móviles */
+  }
+
+  /* Ajuste del footer */
+  footer {
+      padding: 1rem 0.5rem; /* Reducimos el padding en el footer */
+  }
+
+  footer ul {
+      flex-direction: column; /* Poner los enlaces en una columna */
+      align-items: center;
+  }
+}

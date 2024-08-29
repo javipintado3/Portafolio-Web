@@ -43,6 +43,7 @@ header {
     font-weight: bold;
     font-family: 'Poppins', sans-serif; /* Fuente moderna y elegante */
     transition: color 0.3s ease;
+    cursor: pointer; /* Asegura que todos los enlaces tengan el cursor de puntero */
   }
   
   .header-right nav ul li a:hover {

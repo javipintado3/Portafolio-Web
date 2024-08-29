@@ -6,10 +6,11 @@
     <div class="header-right">
       <nav>
         <ul>
-          <li><a routerLink="/">Inicio</a></li>
-          <li><a routerLink="/proyectos">Proyectos</a></li>
-          <li><a routerLink="/contacto">Contacto</a></li>
-          <li><a href="/assets/JavierPintadoNavarro_CV.pdf" target="_blank">Descargar CV</a></li>
+          <li><a (click)="scrollToSection('inicio')">Inicio</a></li>
+          <li><a (click)="scrollToSection('experiencia')">Experiencia</a></li>
+          <li><a (click)="scrollToSection('estudios')">Estudios</a></li>
+          <li><a (click)="scrollToSection('sobre-mi')">Sobre mí</a></li>
+          <li><a href="../../../assets/CV.pdf" target="_blank">Descargar CV</a></li>
         </ul>
       </nav>
     </div>

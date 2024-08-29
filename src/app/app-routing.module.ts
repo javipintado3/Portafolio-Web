@@ -1,15 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './Components/home/home.component';
-import { SobreMiComponent } from './Components/sobre-mi/sobre-mi.component';
-import { ProyectosComponent } from './Components/proyectos/proyectos.component';
-import { ContactosComponent } from './Components/contactos/contactos.component';
+
 
 const routes: Routes = [
-  {path: '', component:HomeComponent},
-  {path:'sobremi', component:SobreMiComponent},
-  {path:'proyectos',component:ProyectosComponent},
-  {path:'contacto',component:ContactosComponent}
+  { path: '', component: HomeComponent },
+  { path: 'home', component: HomeComponent },
+  { path: 'proyectos', component: HomeComponent },  // Si "proyectos" está dentro de HomeComponent
+  { path: 'sobre-mi', component: HomeComponent },  // Si "sobre-mi" está dentro de HomeComponent
 ];
 
 @NgModule({
