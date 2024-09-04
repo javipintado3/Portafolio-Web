@@ -1,52 +1,75 @@
+/* Estilos generales del header */
 header {
+  width: 100%;
+  background-color: #2C3E50;
+  color: #fff;
+  padding: 0.5rem 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between; /* Distribuye el contenido de manera normal en pantallas grandes */
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-left h2 {
+  margin: 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links li a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  cursor: pointer;  /* Mostrar el cursor de selección */
+}
+
+.nav-links li a:hover {
+  color: #00c6ff;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+/* Media query para pantallas pequeñas */
+@media only screen and (max-width: 768px) {
+
+  /* Ocultar el nombre en pantallas pequeñas */
+  .header-left h2 {
+    display: none;
+  }
+
+  /* Ajustar el menú para pantallas pequeñas */
+  .header-right {
+    display: inline-block;
     width: 100%;
-    background-color: #2C3E50; /* Color uniforme para el header */
-    color: #fff;
-    padding: 0.5rem 2rem;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
-  
-  .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+  .nav-links {
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+    font-size: 0.8rem;  /* Reducimos el tamaño de la fuente */
+    gap: 1rem;  /* Ajustamos el espacio entre enlaces */
   }
-  
-  .header-left h1 {
-    margin: 0;
-    font-size: 1.5rem;
-    font-family: 'Poppins', sans-serif; /* Fuente moderna y elegante */
+
+  .nav-links li a {
+    font-size: 0.9rem; /* Ajustar el tamaño de los enlaces */
   }
-  
-  .header-right nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 1.5rem;
-  }
-  
-  .header-right nav ul li {
-    display: inline;
-  }
-  
-  .header-right nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    font-family: 'Poppins', sans-serif; /* Fuente moderna y elegante */
-    transition: color 0.3s ease;
-    cursor: pointer; /* Asegura que todos los enlaces tengan el cursor de puntero */
-  }
-  
-  .header-right nav ul li a:hover {
-    color: #00c6ff;
-  }
-  
+}

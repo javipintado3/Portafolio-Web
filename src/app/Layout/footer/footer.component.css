@@ -1,11 +1,9 @@
 footer {
   background-color: #2C3E50;
-  padding: 1rem 0; /* Ajustamos el padding para eliminar espacios en los lados */
+  padding: 1rem 0;
   text-align: center;
   color: #ccc;
-  width: 100%; /* Asegura que el footer ocupe todo el ancho */
-  position: relative;
-  left: 0;
+  width: 100%;
 }
 
 footer ul {
@@ -24,11 +22,11 @@ footer ul li {
 footer ul li a {
   color: #00c6ff;
   text-decoration: none;
-  display: flex;
-  align-items: center;
 }
 
-footer ul li a:hover {
-  text-decoration: underline;
+@media only screen and (max-width: 768px) {
+  footer ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }
-

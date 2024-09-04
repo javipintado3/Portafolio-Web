@@ -5,14 +5,14 @@
   align-items: center;
   flex-direction: column;
   text-align: center;
-  margin-top: 50px;
-  height: 50vh;
+  margin-top: 30px;
+  min-height: 50vh;
   width: 100%;
-  background-image: url('../../../assets/codigo.jpg');
+  background: url('../../../assets/codigo.jpg') center/cover;
   color: white;
-  font-family: 'Poppins', sans-serif;
 }
 
+/* Home Content */
 .home-content h1 {
   font-size: 3.5rem;
   margin-bottom: 1rem;
@@ -24,6 +24,7 @@
   color: #ffffff;
 }
 
+/* Home Image */
 .home-image img {
   max-width: 170px;
   border-radius: 50%;
@@ -35,47 +36,32 @@
   transform: scale(1.05);
 }
 
-/* General container styles */
-.container {
+/* Section Styles for experiencia, estudios, sobre-mi */
+.experiencia, .estudios, .sobre-mi {
   width: 80%;
-  margin: 2rem auto;
+  margin: 4rem auto;
   padding: 2rem;
-  background-color: #f0f0f0; /* Manteniendo el fondo gris claro */
+  background-color: #f0f0f0;
   border-radius: 15px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.container:hover {
+.experiencia:hover, .estudios:hover, .sobre-mi:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* Experiencia */
-.experiencia {
-  width: 80%;
-  margin: 5rem auto; /* Incrementamos el margen superior e inferior */
-  padding: 2rem;
-  background-color: #f0f0f0; /* Fondo gris claro */
-  border-radius: 15px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.experiencia:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
-}
-
-.experiencia h3 {
+/* Section Headers */
+.experiencia h3, .estudios h3, .sobre-mi h3 {
   font-size: 2.2rem;
   margin-bottom: 1.5rem;
-  color: #004f7c; /* Color coherente para el título */
+  color: #004f7c;
   text-align: left;
   position: relative;
 }
 
-.experiencia h3::after {
+.experiencia h3::after, .estudios h3::after, .sobre-mi h3::after {
   content: '';
   position: absolute;
   left: 0;
@@ -85,43 +71,52 @@
   background-color: #00c6ff;
 }
 
-.experiencia-item {
-  margin-bottom: 2rem;
-}
-
-.experiencia-item h4 {
+/* Item Titles */
+.experiencia-item h4, .estudios-item h4 {
   font-size: 1.8rem;
   margin-bottom: 0.5rem;
   color: #00c6ff;
   transition: color 0.3s ease;
 }
 
-.experiencia-item h4:hover {
+.experiencia-item h4:hover, .estudios-item h4:hover {
   color: #004f7c;
 }
 
-.experiencia-item p {
+/* Paragraph Styles */
+.experiencia-item p, .estudios-item p, .sobre-mi p {
   font-size: 1rem;
   margin: 0.5rem 0;
   line-height: 1.8;
   color: #333;
 }
 
-.experiencia-item strong {
-  display: block;
-  margin-top: 0.5rem;
-  color: #004f7c;
-}
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+  .home-container {
+    margin-top: 0; /* Elimina el margen superior en móviles */
+    padding: 0; /* Elimina el padding innecesario */
+    min-height: 30vh; /* Aún más pequeño en móviles */
+  }
 
-/* Estudios */
-.estudios {
-  width: 80%;
-  margin: 5rem auto; /* Incrementamos el margen superior e inferior */
-  padding: 2rem;
-  background-color: #f0f0f0; /* Fondo gris claro */
-  border-radius: 15px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  .home-content h1 {
+    font-size: 2rem;
+  }
+
+  .home-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .home-image img {
+    max-width: 70px;
+  }
+
+  .experiencia, .estudios, .sobre-mi {
+    width: 95%;
+    margin: 1.5rem auto;
+    padding: 1rem;
+  }
+
 }
 
 .estudios:hover {
@@ -129,89 +124,33 @@
   box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
 }
 
-.estudios h3 {
-  font-size: 2.2rem;
-  margin-bottom: 1.5rem;
-  color: #004f7c;
-  text-align: left;
-  position: relative;
-}
 
-.estudios h3::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  width: 50px;
-  height: 3px;
-  background-color: #00c6ff;
-}
 
-.estudios-item {
-  margin-bottom: 2rem;
-}
 
-.estudios-item h4 {
-  font-size: 1.8rem;
-  margin-bottom: 0.5rem;
-  color: #00c6ff;
-  transition: color 0.3s ease;
-}
-
-.estudios-item h4:hover {
-  color: #004f7c;
-}
-
+/* Información de las fechas y lugar de estudio */
 .estudios-item p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+/* Listas de habilidades */
+.estudios-item ul {
+  padding-left: 20px;
   font-size: 1rem;
-  margin: 0.5rem 0;
   line-height: 1.8;
-  color: #333;
 }
 
-.estudios-item strong {
-  display: block;
-  margin-top: 0.5rem;
+.estudios-item ul li {
+  margin-bottom: 0.5rem;
+}
+
+.estudios-item ul li strong {
   color: #004f7c;
 }
 
-/* Sobre Mí */
-.sobre-mi {
-  width: 80%;
-  margin: 5rem auto; /* Incrementamos el margen superior e inferior */
-  padding: 2rem;
-  background-color: #f0f0f0; /* Fondo gris claro */
-  border-radius: 15px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.sobre-mi:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
-}
-
-.sobre-mi h3 {
-  font-size: 2.2rem;
-  margin-bottom: 1.5rem;
-  color: #004f7c;
-  text-align: left;
-  position: relative;
-}
-
-.sobre-mi h3::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  width: 50px;
-  height: 3px;
-  background-color: #00c6ff;
-}
-
-.sobre-mi p {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  margin-bottom: 1.5rem;
-  text-align: justify;
+/* Efecto al pasar por encima de las secciones */
+.estudios-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
