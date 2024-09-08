@@ -92,11 +92,12 @@
 }
 
 /* Responsive Styles */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
   .home-container {
     margin-top: 0; /* Elimina el margen superior en móviles */
     padding: 0; /* Elimina el padding innecesario */
     min-height: 30vh; /* Aún más pequeño en móviles */
+    padding-top: 10px;
   }
 
   .home-content h1 {
@@ -108,7 +109,7 @@
   }
 
   .home-image img {
-    max-width: 70px;
+    max-width: 65px;
   }
 
   .experiencia, .estudios, .sobre-mi {
